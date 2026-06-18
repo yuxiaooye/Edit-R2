@@ -1,4 +1,4 @@
-<h1 align="center"> Edit-R2: Multi-Turn Image Editing via Flow-GRPO </h1>
+<h1 align="center"> Edit-R2: Context-Aware Reinforcement Learning for Multi-Turn Image Editing </h1>
 
 <div align="center">
   <a href="https://arxiv.org/abs/2505.05470"><img src="https://img.shields.io/badge/ArXiv-Edit--R2-red?logo=arxiv" /></a> &nbsp;

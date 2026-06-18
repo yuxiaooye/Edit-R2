@@ -7,12 +7,17 @@
 <br>
 
 
+
+
 Edit-R2 formulates **multi-turn in-context image editing** as a session-level RL problem, training [BAGEL-7B-MoT](https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT) with online RL. It features:
 
 - **In-Context Chain-of-Thought (IC-CoT)** — BAGEL's own vision-language pathway reconstructs the operative session intent from the dialogue history, consolidating scattered historical constraints into a compact reasoning trace before sampling
 - **Unified multi-turn RL** — IC-CoT generation and visual generation are jointly optimized, coupling the discrete text space of session-intent reconstruction with the continuous latent space of the flow-matching generator
 - **Trajectory filtering** — prevents corrupted rollouts from dominating training and contaminating later training steps, ensuring stable session-level optimization
 - **MICE-Bench reward suite** — three complementary reward signals: Instruction Following (IF), Content Consistency (CC, following EDiVal), and the newly introduced Global Awareness (GA), measuring compliance with accumulated session-level constraints
+
+
+<img width="2082" height="1060" alt="teaser" src="https://github.com/user-attachments/assets/ecdc162e-9fd6-4739-a85d-6e4a613a0a62" />
 
 ---
 
@@ -117,7 +122,7 @@ Datasets are expected in **EDiVal format**: a directory containing `train_metada
 
 ### Multi-node training (24 GPUs across 4 nodes)
 
-Run the following command **on every triaining node**, passing each node's rank as the first argument:
+Run the following command **on every triaining node**:
 
 ```bash
 # Node 0 (master)

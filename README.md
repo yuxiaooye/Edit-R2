@@ -92,9 +92,11 @@ Reason: Successfully added [dog] to the left of [tree]...
 
 ---
 
-## Dataset Format
+## Dataset Preparation
 
-Datasets are expected in **EDiVal format**: a directory containing `train_metadata.jsonl` and `test_metadata.jsonl` where each line is:
+Download [source images](https://drive.google.com/file/d/1ztxZtg4VYiZiBr8Pbs9uBXYf9NKOnt3a/view?usp=drive_link) and put them into `source_image` subfolder.
+
+For sanity check, datasets are expected in **EDiVal format**: a directory containing `train_metadata.jsonl` and `test_metadata.jsonl` where each line is:
 
 ```json
 {

@@ -21,7 +21,7 @@ BATCH_SIZE = 64
 
 DEFAULT_GA_VLM_URL = "http://localhost:8000/v1"
 GA_VLM_URL = os.getenv("EDIVAL_GA_VLM_URL", DEFAULT_GA_VLM_URL)
-GA_MODEL_PATH = os.getenv("EDIVAL_GA_MODEL_PATH", "/m2v_intern/yeyuxiao/llms/Qwen2.5-VL-32B-Instruct")
+GA_MODEL_PATH = os.getenv("VLLM_MODEL_PATH", "/path/to/Qwen2.5-VL-32B-Instruct")
 GA_VLM_TEMPERATURE = float(os.getenv("EDIVAL_GA_TEMPERATURE", "0.6"))
 
 MULTITURN_VLM_PROMPT = """你是一个专门评估多轮图像编辑任务的专家。你将获得一个由N张图像和N-1条编辑指令组成的序列。
